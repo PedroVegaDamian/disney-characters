@@ -1,0 +1,47 @@
+<section class="characterDetails">
+  <div
+    class="characterDetails__container"
+    *ngIf="character !== null; else loading"
+  >
+    <img
+      class="characterDetails__image"
+      [src]="character.imageUrl"
+      [alt]="character.name"
+    />
+
+    <div class="characterDetails__info">
+      <p><span>Name:</span> {{ character.name }}</p>
+      <p *ngIf="character.allies.length > 0">
+        <span>Allies:</span> {{ character.allies }}
+      </p>
+      <p *ngIf="character.enemies.length > 0">
+        <span>Enemies: </span> {{ character.enemies }}
+      </p>
+      <p *ngIf="character.films.length > 0">
+        <span>Films:</span> {{ character.films }}
+      </p>
+      <p *ngIf="character.tvShows.length > 0">
+        <span>Tv shows:</span> {{ character.tvShows }}
+      </p>
+      <p *ngIf="character.videoGames.length > 0">
+        <span>Video games: </span> {{ character.videoGames }}
+      </p>
+      <p *ngIf="character.shortFilms.length > 0">
+        <span>Short films: </span> {{ character.shortFilms }}
+      </p>
+      <p *ngIf="character.parkAttractions.length > 0">
+        <span>Park attractions: </span> {{ character.parkAttractions }}
+      </p>
+      <p *ngIf="character.sourceUrl">
+        <span>Source url: </span>
+        <a [href]="character.sourceUrl" target="_blank">
+          {{ character.sourceUrl }}
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <p>Loading info..</p>
+  </ng-template>
+</section>

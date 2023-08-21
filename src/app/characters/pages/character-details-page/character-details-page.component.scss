@@ -1,0 +1,22 @@
+.characterDetails {
+  margin: 2rem;
+}
+
+.characterDetails__container {
+  gap: 2rem;
+  display: flex;
+}
+
+.characterDetails__image {
+  width: 320px;
+  height: 400px;
+  aspect-ratio: 1 / 1;
+}
+
+.characterDetails__info {
+  font-size: 1rem;
+}
+
+.characterDetails__info span {
+  font-weight: 600;
+}

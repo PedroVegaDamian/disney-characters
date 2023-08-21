@@ -1,0 +1,19 @@
+.characterCard {
+  display: block;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.characterCard__image {
+  width: 100%;
+  height: 320px;
+  aspect-ratio: 1 / 1;
+}
+
+.characterCard__name {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1.2rem 2rem;
+}

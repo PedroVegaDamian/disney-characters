@@ -1,0 +1,24 @@
+.theNavbar {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  padding-inline: 2rem;
+  background-color: #333;
+  justify-content: space-between;
+}
+
+.theNavbar__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.theNavbar__links {
+  gap: 1rem;
+  display: flex;
+}
+
+.theNavbar__link {
+  color: inherit;
+}

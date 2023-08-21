@@ -1,0 +1,8 @@
+<a class="characterCard" [routerLink]="['/characters', character._id]">
+  <img
+    [alt]="character.name"
+    [src]="character.imageUrl"
+    class="characterCard__image"
+  />
+  <p class="characterCard__name">Name: {{ character.name }}</p>
+</a>

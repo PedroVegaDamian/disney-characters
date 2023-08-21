@@ -1,0 +1,7 @@
+.listCharacter {
+  gap: 1.5rem;
+  margin: 2rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
